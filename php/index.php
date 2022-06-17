@@ -4,13 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylo.css">
-    <title>Document</title>
+    <script src="../js/funciones.js"></script>
+    <title>Index</title>
 </head>
 <body>
 
     <header id="header">
-        <img id="img" src="../img/Logo-Universidad-de-Cartagena2.jpg" alt="Logo">
-
+    <a href="index.php"><img id="img" src="../img/Logo-Universidad-de-Cartagena2.jpg" alt="Logo" ></a>
         <div class="contenedor-menu">
             <div class="menu">
                 <nav>
@@ -18,8 +18,8 @@
                         <li><a class="nav-enlace" href="">Tablas</a></li>
                         <li><a class="nav-enlace" href="">Unidad 1</a>
                             <ul>
-                                <li><a href="">Form 1</a></li>
-                                <li><a href="">Form 2</a></li>
+                                <li><a href="#" onclick="show('form1.php');">Form 1</a></li>
+                                <li><a href="#" onclick="show('form2.php');">Form 2</a></li>
                                 <li><a href="">Form 3</a></li>
                                 <li><a href="">Form 4</a></li>
                                 <li><a href="">Form 5</a></li>
@@ -34,25 +34,25 @@
         </div>
     </header>
     
-    <div class="contenedor">
-        <main class="contenedor-flex">
+    <center><iframe id="formularios"></iframe></center>
 
-       <div class="principal">
 
-           <div class="servicios">
-
-               <div class="servicio elemento-1">
-                    <h2>Servicio 1</h2>
-               </div>
-               <div class="servicio elemento-2">
-                    <h2>Servicio 2</h2>
-               </div>
-               <div class="servicio elemento-3">
-                    <h2>Servicio 3</h2>
-               </div>
-           </div>
-       </div>
-    
+        <!-- <div class="contenedor">
+            <main class="contenedor-flex">
+        <div class="principal">
+                <div class="servicios">
+                        <div class="servicio elemento-1">
+                                <h2></h2>
+                        </div>
+                        <div class="servicio elemento-2">
+                                <h2>Servicio 2</h2>
+                        </div>
+                        <div class="servicio elemento-3">
+                                <h2>Servicio 3</h2>
+                        </div>
+                </div>
+        </div>
+        
     <aside>
         <h2>Acerca de mi</h2>
         <ul>
@@ -65,10 +65,9 @@
         </ul>
     </aside>    
         </main>
-        <footer>
-            <p>Todos</p>
-        </footer>
 </div>
-
+        <footer>
+            <p>Todos los derechos reservados</p>
+        </footer> -->
 </body>
 </html>
