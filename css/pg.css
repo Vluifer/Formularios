@@ -1,0 +1,19 @@
+ .layout {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+.grow3 { 
+    flex-grow: 3;
+    float: left;
+    width:43% ;
+    height: 223;
+    background-color: aqua;
+ }
+  
+.grow7 { 
+    flex-grow: 7; 
+    float: right;
+} 

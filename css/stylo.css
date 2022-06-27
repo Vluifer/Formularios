@@ -15,8 +15,8 @@ body{
   margin: auto;
   width: 89%;
   height: 150px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   background-color:white;
   flex-direction: initial;
   
@@ -115,12 +115,13 @@ nav ul li ul li a:hover{
 }
 
 /*Contenido-Principal*/
+/* 
 .contenedor {
   background-color:white;
   width: 89%;
   height: calc(100vh - 20px);
   margin: 0 auto;
-  padding: 20px 30px 0 30px;
+  padding: 20px 30px 0 30px; 
 
 }
 
@@ -152,12 +153,11 @@ aside{
 }
 
 .servicios{
-  /*flex aqui*/
 display: flex;
 }
 
 .servicios .servicios{
-  /*flex aqui*/
+
   flex: 1;
 }
 
@@ -173,48 +173,47 @@ background-color: indianred;
 
 .servicios :nth-child(3){
   background-color: palegreen;
-}
+} 
+*/
 
 
 #aside{
   float: left;
-  /* background-color:whitesmoke; */
+  height: 100px;
   padding:50px;
   display: flex;
   flex-direction: column;
+ 
  }
 
 #section1{
- float: right;
-  /* background-color:whitesmoke; */
+  float: right;
+  height: 100px;
   padding:50px;
   display: flex;
-  flex-direction: initial;
+   flex-direction: column; 
 }
 
-/* .hidden{
-display: none;
-} */
 
 footer{
   margin: auto;
   width: 89%;
-  height: 200px;
+  height: 17%;
   margin-top: 30px;
   background-color:white;
   /*flex aqui*/
   display: flex;
   justify-content: center;
-}
+} 
 
 
 footer p {
 color: black;
 }
 
- table {
-  width: 100%;
+.tabla {
   border: 1px solid #000;
+  margin: 0 auto;
 }
 th, td {
   width: 25%;
@@ -236,17 +235,17 @@ h1,h2{
 .none{
     border-style: none;
 }
-
-.field{
-    width: 50%;
-    text-align: center;
-    border-style: none;
-}
  
 
 #formularios{
-
-  width: 80%;
-  height: 60vh;
-  
+  width: 89%;
+  height: 500px;
+  display: block;
+  margin: 0 auto;  
 }
+
+.formulario-color{
+  background: white;
+  height:500px;
+  width:89%px;
+  } 

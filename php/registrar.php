@@ -47,12 +47,9 @@ echo "<br>";
 
         $color = $_POST['color_favorito'];
         $estatura = $_POST['estatura'];
-        echo $color."<br>".$estatura."<br>";
 
         copy($_FILES['archivo']['tmp_name'], $_FILES['archivo']['name']);
-        echo 'Archivo cargado correctamente'."<br>";
         $nombre =$_FILES['archivo']['name'];
-        echo "<img src=\"$nombre\">"."<br>";
 
 
 // Quiento formulario

@@ -1,13 +1,3 @@
-<?php
-
-$codigo = isset($_POST['codigo']) ? $_POST['codigo']: '';
-$clave = isset($_POST['clave']) ? $_POST['clave']: '';
-$correo = isset($_POST['correo']) ? $_POST['correo']: '' ;
-$telefono = isset($_POST['telefono']) ? $_POST['telefono']: '' ;
-$buscar = isset($_POST['buscar']) ? $_POST['buscar']: '' ;
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,35 +6,34 @@ $buscar = isset($_POST['buscar']) ? $_POST['buscar']: '' ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylo.css">
     <script src="../js/funciones.js"></script>
+    <script src="../js/validaciones.js"></script>
     <title>Document</title>
 </head>
 <body>
     
+<div class="formulario-color">
 
-<div id="segundo-formulario">
-
-<fieldset class="none" style=" text-align: center;">
-    <legend><b>Formulario 2</b></legend>
+    <legend><b><h2>Formulario 2</h2></b></legend>
 
         <aside id="aside">
-            <form action="#" method="post">
+            <form method="post" onsubmit="form();">
              
                         <table class="none">
                             <tr>
                                 <th class="none" style="text-align: right;">Codigo:</th>
-                                <td class="none"><input type="number" name="codigo"></td>
+                                <td class="none"><input type="number" name="codigo" id="codigo"></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Clave:</th>
-                                <td class="none"><input type="password" name="clave"></td>
+                                <td class="none"><input type="password" name="clave" id="clave"></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">E-mail:</th>
-                                <td class="none"><input type="email" name="correo"></td>
+                                <td class="none"><input type="email" name="correo" id="correo"></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Telefono:</th>
-                                <td class="none"><input type="tel" name="telefono"></td>
+                                <td class="none"><input type="tel" name="telefono" id="telefono" maxlength="10"  pattern="[0-9]+"></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Buscar:</th>
@@ -55,15 +44,13 @@ $buscar = isset($_POST['buscar']) ? $_POST['buscar']: '' ;
                                 <td class="none"><input type="submit"></td>&nbsp;&nbsp;
                                 <td class="none"><input type="reset"></td>
                             </tr>
-                        </table>
-               
+                        </table>               
             </form>   
         </aside>
 
         <section id="section1">
-           
-                
-                    <table>
+ 
+                    <table class="tabla">
                         <tr>
                             <th>Codigo</th>
                             <th>Clave</th>
@@ -72,16 +59,45 @@ $buscar = isset($_POST['buscar']) ? $_POST['buscar']: '' ;
                             <th>Buscar</th>
                         </tr>
                         <tr>
-                            <td><label"><?php echo $codigo ?></label></td>
-                            <td><label"><?php echo $clave ?></label></td>
-                            <td><label"><?php echo $correo ?></label></td>   
-                            <td><label"><?php echo $telefono ?></label></td>
-                            <td><label"><?php echo $buscar ?></label></td>
+                            <td>
+                                <?php
+                                        if(isset($_POST['codigo']) != ''){
+                                            echo $_POST['codigo'];
+                                        }
+                                 ?>
+                            </td>
+                            <td>
+                                <?php 
+                                        if(isset($_POST['clave']) != ''){
+                                            echo $_POST['clave'];
+                                        } 
+                                ?>
+                            </td>
+                            <td>
+                                <?php 
+
+                                 if(isset($_POST['correo']) != ''){
+                                        echo $_POST['correo'];
+                                    }
+                                ?>
+                            </td>   
+                            <td>
+                                <?php 
+                                    if(isset($_POST['telefono']) != ''){
+                                        echo $_POST['telefono'];
+                                    } 
+                                ?>
+                            </td>
+                            <td>
+                                <?php 
+                                    if(isset($_POST['buscar']) != ''){
+                                        echo $_POST['buscar'];
+                                    } 
+                                ?>
+                            </td>
                         </tr>
                     </table>
         </section> 
-
-    </div>
-
+</div>
 </body>
 </html>
