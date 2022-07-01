@@ -1,12 +1,3 @@
-<?php
-$color = isset($_POST['color_favorito'])?$_POST['color_favorito']:"";
-$estatura = isset($_POST['estatura'])?$_POST['estatura']:"";
-
-/* copy(isseT($_FILES['archivo']['tmp_name']), isset($_FILES['archivo']['name']));
-$nombre =isset($_FILES['archivo']['name'])?$_FILES['archivo']['name']:""; */
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,8 +48,8 @@ $nombre =isset($_FILES['archivo']['name'])?$_FILES['archivo']['name']:""; */
                             <th>Estarura</th>
                         </tr>
                         <tr>
-                            <td><?php echo $color ?></td>
-                            <td><?php echo $estatura ?></td>   
+                            <td><?php echo isset($_POST['color_favorito'])?$_POST['color_favorito']:"" ?></td>
+                            <td><?php echo isset($_POST['estatura'])?$_POST['estatura']:"" ?></td>   
                         </tr>
                     </table>
                 

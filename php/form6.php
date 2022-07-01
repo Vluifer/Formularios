@@ -1,8 +1,3 @@
-<?php
-$estadoCivil = isset($_POST['estado_civil'])? $_POST['estado_civil']:"";
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,15 +56,20 @@ $estadoCivil = isset($_POST['estado_civil'])? $_POST['estado_civil']:"";
                             <th>Idiomas que habla</th>
                         </tr>
                         <tr>
-                            <td><?php echo $estadoCivil ?></td>
-                            <td><?php
+                            <td><?php echo isset($_POST['estado_civil'])? $_POST['estado_civil']:"" ?></td>
+                            <td>
+                            <?php
+                            /*Se verifica que lo recibido a través del motodo POST sea diferente a null, 
+                            en este caso se recorre con un foreach para mostrar todos los posibles resultados en una tabla*/
                             if(isset($_POST['idioma'])!= null){
-                                foreach ($_POST['idioma'] as $va){
-                                    echo $va."<br>";
+                                foreach ($_POST['idioma'] as $idioma){
+                                    echo $idioma."<br>";
                                 }
                             }
-                             ?></td>
-                        </tr>
+                             ?>
+                            </td>
+                        
+                    </tr>
                     </table>
         </section>
     </div>

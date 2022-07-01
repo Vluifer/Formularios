@@ -21,19 +21,19 @@
                         <table class="none">
                             <tr>
                                 <th class="none" style="text-align: right;">Codigo:</th>
-                                <td class="none"><input type="number" name="codigo" id="codigo"></td>
+                                <td class="none"><input type="number" name="codigo" id="codigo" required></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Clave:</th>
-                                <td class="none"><input type="password" name="clave" id="clave"></td>
+                                <td class="none"><input type="password" name="clave" id="clave" required></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">E-mail:</th>
-                                <td class="none"><input type="email" name="correo" id="correo"></td>
+                                <td class="none"><input type="email" name="correo" id="correo" required></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Telefono:</th>
-                                <td class="none"><input type="tel" name="telefono" id="telefono" maxlength="10"  pattern="[0-9]+"></td>
+                                <td class="none"><input type="tel" name="telefono" id="telefono" maxlength="10"  pattern="[0-9]+" required></td>
                             </tr>
                             <tr>
                                 <th class="none" style="text-align: right;">Buscar:</th>
@@ -61,6 +61,9 @@
                         <tr>
                             <td>
                                 <?php
+                                 /*Recogemos a través del metodo POST lo que se envia desde el name del formulario,
+                                 comprobamos si la variable esta definida y tiene un valor diferente de vacio, en
+                                 caso que asi sea se muestra lo envio en una tabla*/
                                         if(isset($_POST['codigo']) != ''){
                                             echo $_POST['codigo'];
                                         }
@@ -75,7 +78,6 @@
                             </td>
                             <td>
                                 <?php 
-
                                  if(isset($_POST['correo']) != ''){
                                         echo $_POST['correo'];
                                     }

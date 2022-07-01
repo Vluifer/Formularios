@@ -1,11 +1,3 @@
-<?php
-$fecha = isset($_POST['fecha']) ? $_POST['fecha']:'';
-$fechacompleta= isset($_POST['fechacompleta']) ? $_POST['fechacompleta']:'';
-$mes = isset($_POST['mes']) ?$_POST['mes']:''; 
-$hora= isset ($_POST['hora']) ?$_POST['hora']:'';
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,10 +53,10 @@ $hora= isset ($_POST['hora']) ?$_POST['hora']:'';
                             <th>Hora</th>
                         </tr>
                         <tr>
-                            <td><label"><?php echo $fecha ?></label></td>
-                            <td><label"><?php echo $fechacompleta ?></label></td>
-                            <td><label"><?php echo $mes ?></label></td>   
-                            <td><label"><?php echo $hora ?></label></td>
+                            <td><?php echo isset($_POST['fecha']) ? $_POST['fecha']:'' ?></td>
+                            <td><?php echo isset($_POST['fechacompleta']) ? $_POST['fechacompleta']:'' ?></td>
+                            <td><?php echo isset($_POST['mes']) ?$_POST['mes']:'' ?></td>   
+                            <td><?php echo isset ($_POST['hora']) ?$_POST['hora']:'' ?></td>
                         </tr>
                     </table>
                 

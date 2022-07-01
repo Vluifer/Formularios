@@ -1,19 +1,32 @@
- .layout {
+ .contenedor {
     width: 100%;
     display: flex;
     gap: 12px;
     justify-content: center;
   }
   
-.grow3 { 
+#contenido1 { 
     flex-grow: 3;
     float: left;
     width:43% ;
     height: 223;
-    background-color: aqua;
+    background-color:#1e88e5;
+    font: white;
  }
   
-.grow7 { 
+#contenido2 { 
     flex-grow: 7; 
     float: right;
 } 
+
+h3{
+  text-align: center;
+  color:white ;
+}
+h2{
+  text-align: center;
+}
+
+.centrar{
+  text-align: center;
+}

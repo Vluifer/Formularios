@@ -16,8 +16,7 @@
             
             <aside id="aside">
                    
-                            <form method="post" onsubmit="vacio();">
-                              
+                            <form method="post" onsubmit="">
                                     <table>
                                         <tr>
                                             <th class="none" style="text-align: right;">Nombre:</th>
@@ -27,29 +26,30 @@
                                      
                                         <tr><td class="none" colspan="3"><hr></td></tr>
                                         <tr>
-                                            <td class="none"><input type="submit"></td>&nbsp;&nbsp;
+                                            <td class="none"><input type="submit" onclick="vacio();"></td>&nbsp;&nbsp;
                                             <td class="none"><input type="reset"></td>
                                         </tr>
                                     </table>
-                            </form>
-                         
+                            </form>         
             </aside>
                 
-             <section id="section1">                    
+            <section id="section1">                    
                 <table class="tabla">
                     <tr>
                         <th>Nombre</th>
                     </tr>   
                     <tr>
                     <td>
-                        <?php 
+                        <?php   /*Recogemos a través del metodo POST lo que se envia desde el name del formulario,
+                                 comprobamos si la variable esta definida y tiene un valor diferente de vacio, en
+                                 caso que asi sea se muestra lo envio en una tabla*/
                                 if(isset($_POST['nombref1']) != ''){
                                     echo $_POST['nombref1'];
                                 }
                         ?>
                     </td>
                     </tr>
-                </table>                                 
+                </table>   
             </section>
     </div>
            

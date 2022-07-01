@@ -1,14 +1,3 @@
-<?php
-
-$genero = isset($_POST['genero']) ? $_POST['genero']: '';
-$leer = isset($_POST['leer']) ? $_POST['leer']: '';
-$cine = isset($_POST['cine']) ? $_POST['cine']: '';
-$tv = isset($_POST['tv']) ? $_POST['tv']: '';   
-$jugar = isset($_POST['jugar']) ? $_POST['jugar']: ''; 
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,11 +59,14 @@ $jugar = isset($_POST['jugar']) ? $_POST['jugar']: '';
                             <th>Jugar</th>
                         </tr>
                         <tr>
-                            <td><?php echo $genero ?></td>
-                            <td><?php echo $leer ?></td>
-                            <td><?php echo $tv ?></td>   
-                            <td><?php echo $cine ?></td>
-                            <td><?php echo $jugar ?></td>
+                         <!-- /*Se recibe a través del metodo POST lo que se envia desde el name del formulario,
+                             Compobamos si la variable tiene un valor definido y en caso que no, le estamos colocando vacio
+                            para luego mostrar lo que recibe en una tabla   -->
+                            <td><?php echo isset($_POST['genero'])? $_POST['genero']: '' ?></td>
+                            <td><?php echo isset($_POST['leer']) ? $_POST['leer']: '' ?></td>
+                            <td><?php echo isset($_POST['cine']) ? $_POST['cine']: '' ?></td>   
+                            <td><?php echo  isset($_POST['tv']) ? $_POST['tv']: '' ?></td>
+                            <td><?php echo isset($_POST['jugar']) ? $_POST['jugar']: '' ?></td>
                         </tr>
                     </table>
                 

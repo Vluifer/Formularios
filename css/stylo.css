@@ -27,7 +27,7 @@ body{
 height: 150px;
 }
 
-/*Menu*/
+/*MENU*/
 .contenedor-menu{
   width: 100%;
   height: 50px;
@@ -114,69 +114,7 @@ nav ul li ul li a:hover{
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-/*Contenido-Principal*/
-/* 
-.contenedor {
-  background-color:white;
-  width: 89%;
-  height: calc(100vh - 20px);
-  margin: 0 auto;
-  padding: 20px 30px 0 30px; 
-
-}
-
-.contenedor-flex{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-@media screen and (min-width:768px){
-  .contenedor-flex{
-    flex-direction: row;
-  }  
-}
-
-aside{
-  background-color: white;
-}
-
-@media screen and (min-width:768px){
-  .principal{
-    flex:0 1 60%;
-    margin-right: 20px;
-  }
-  aside{
-    flex:1;
-  }  
-}
-
-.servicios{
-display: flex;
-}
-
-.servicios .servicios{
-
-  flex: 1;
-}
-
-
-.servicios{
-padding: 10px;
-background-color: indianred;
-}
-
-.servicios :nth-child(2){
-  background-color: yellowgreen;
-}
-
-.servicios :nth-child(3){
-  background-color: palegreen;
-} 
-*/
-
-
+/*CONTENIDO*/
 #aside{
   float: left;
   height: 100px;
@@ -191,10 +129,10 @@ background-color: indianred;
   height: 100px;
   padding:50px;
   display: flex;
-   flex-direction: column; 
+  flex-direction: column; 
 }
 
-
+/*PIE DE PAGINA*/
 footer{
   margin: auto;
   width: 89%;
@@ -203,14 +141,16 @@ footer{
   background-color:white;
   /*flex aqui*/
   display: flex;
-  justify-content: center;
 } 
 
 
-footer p {
+footer {
 color: black;
+text-align: left;
 }
 
+
+/*ESTILO FORMULARIOS*/
 .tabla {
   border: 1px solid #000;
   margin: 0 auto;
@@ -225,7 +165,7 @@ th, td {
 }
 
 th {
-  background:bisque;
+  background:#1e88e5;
 } 
 
 h1,h2{
@@ -235,7 +175,14 @@ h1,h2{
 .none{
     border-style: none;
 }
- 
+
+.formulario-color{
+  background: white;
+  height:500px;
+  width:89%px;
+  } 
+
+/*ESTILO IFRAME*/
 
 #formularios{
   width: 89%;
@@ -244,8 +191,3 @@ h1,h2{
   margin: 0 auto;  
 }
 
-.formulario-color{
-  background: white;
-  height:500px;
-  width:89%px;
-  } 
