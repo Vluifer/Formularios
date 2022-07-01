@@ -33,7 +33,7 @@
                     <tr><td class="none" colspan="3"><hr></td></tr>
                     <tr>
                     <tr>
-                        <td class="none"><input type="submit" value="Enviar"></td>&nbsp;&nbsp;
+                        <td class="none"><input type="submit"></td>&nbsp;&nbsp;
                         <td class="none"><input type="reset"></td>
                     </tr>
                     </table>

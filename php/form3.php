@@ -17,7 +17,7 @@
 
 <form action="#" method="post">
 
-    <table class="none">
+    <table class="none" id="form3">
         <tr>
             <th class="none" style="text-align: left;">Genero:</th>
             <td class="none">

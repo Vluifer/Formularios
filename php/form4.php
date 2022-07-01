@@ -35,7 +35,7 @@
                         </tr> 
                         <tr><td class="none" colspan="3"><hr></td></tr>
                             <tr>
-                                <td class="none"><input type="submit" name></td>&nbsp;&nbsp;
+                                <td class="none"><input type="submit"></td>&nbsp;&nbsp;
                                 <td class="none"><input type="reset"></td>
                             </tr>
                         </table>

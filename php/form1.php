@@ -16,7 +16,7 @@
             
             <aside id="aside">
                    
-                            <form method="post" onsubmit="">
+                            <form method="post">
                                     <table>
                                         <tr>
                                             <th class="none" style="text-align: right;">Nombre:</th>
@@ -26,7 +26,7 @@
                                      
                                         <tr><td class="none" colspan="3"><hr></td></tr>
                                         <tr>
-                                            <td class="none"><input type="submit" onclick="vacio();"></td>&nbsp;&nbsp;
+                                            <td class="none"><input type="submit" value="Enviar" onclick="vacio()"></td>&nbsp;&nbsp;
                                             <td class="none"><input type="reset"></td>
                                         </tr>
                                     </table>
@@ -39,6 +39,7 @@
                         <th>Nombre</th>
                     </tr>   
                     <tr>
+                
                     <td>
                         <?php   /*Recogemos a través del metodo POST lo que se envia desde el name del formulario,
                                  comprobamos si la variable esta definida y tiene un valor diferente de vacio, en
